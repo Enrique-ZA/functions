@@ -1,6 +1,4 @@
-#include <iostream>
-
-using namespace std;
+// ofRandomf is a openframeworks function
 
 float rGaussian() {
 		float v1, v2, s;
@@ -11,10 +9,4 @@ float rGaussian() {
 		} while (s >= 1 || s == 0);
 		float multiplier = sqrt(-2 * log(s) / s);
 		return v1 * multiplier;
-}
-
-int main(){
-  float randomGaussian = rGaussian();
-
-  return 0;
 }
